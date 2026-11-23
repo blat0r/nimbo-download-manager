@@ -126,6 +126,7 @@ A versão portátil avisa e abre esta página para você baixar.
 
 - Sem conta, sem telemetria, sem anúncios
 - A conversa com a extensão fica no próprio PC (`127.0.0.1`), aceita só a extensão pareada e recusa páginas da web
+- [Política de privacidade completa](PRIVACY.md)
 - As ferramentas externas (yt-dlp, FFmpeg, Deno) vêm dos repositórios oficiais e têm o SHA-256 conferido antes de serem usadas
 
 ## Perguntas frequentes
