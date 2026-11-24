@@ -45,6 +45,14 @@
 - Links em lote (`arquivo[01-20].zip`), colar vários links de uma vez, importar e exportar a lista
 - Agendador e ações ao terminar: desligar, suspender ou fechar o Nimbo
 
+### Torrent
+
+- Links magnet e arquivos `.torrent`: cole o link, arraste o arquivo para a janela ou use **Torrent** na barra lateral
+- Escolha quais arquivos baixar antes de começar
+- Pausa e retoma como qualquer download, entra nas filas e respeita os limites de velocidade
+- Opcional: o Nimbo abre os links magnet do navegador e os `.torrent` do Windows
+- Ao terminar, para de compartilhar
+
 ### Vídeo e música
 
 <img src="docs/video.png" alt="Janela de baixar vídeo com as qualidades de 4K a 360p e os formatos de áudio" width="900">
