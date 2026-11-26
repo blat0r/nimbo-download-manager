@@ -14,7 +14,9 @@
   &nbsp;·&nbsp;
   <a href="#instalar">Instalar</a>
   &nbsp;·&nbsp;
-  <a href="#extensão-do-navegador">Extensão</a>
+  <a href="https://chromewebstore.google.com/detail/nimbo-download-manager/deofidkhliapkbelfhkamddcjlfpmljj">Extensão para Chrome</a>
+  &nbsp;·&nbsp;
+  <a href="#extensão-do-navegador">Firefox</a>
   &nbsp;·&nbsp;
   <a href="#perguntas-frequentes">Perguntas</a>
 </p>
@@ -104,10 +106,9 @@ então funciona também em sites que pedem login.
 
 **Firefox:** Configurações do Nimbo → Navegador → *Instalar no Firefox*. A extensão é assinada pela Mozilla.
 
-**Chrome, Edge, Brave e Vivaldi:** Configurações do Nimbo → Navegador → *Abrir no Chrome* (ou no seu navegador).
-Abrem a página de extensões e a pasta da extensão; ligue o *Modo do desenvolvedor* e arraste a pasta para a página.
-Quem não usa o Nimbo instalado pode baixar a extensão sozinha, o `Nimbo_x.y.z_chrome-extension.zip`, descompactar e
-fazer o mesmo com a pasta.
+**Chrome, Edge, Brave e Vivaldi:** instale pela [Chrome Web Store](https://chromewebstore.google.com/detail/nimbo-download-manager/deofidkhliapkbelfhkamddcjlfpmljj) — um clique, e ela se
+atualiza sozinha. No Nimbo, Configurações → Navegador → *Instalar no Chrome* abre essa página no navegador certo.
+No Edge, clique antes em *Permitir extensões de outras lojas*.
 
 ## Instalar
 
@@ -117,7 +118,7 @@ Escolha um na [última versão](../../releases/latest):
 |---|---|
 | `Nimbo_x.y.z_x64-setup.exe` | A maioria. Instala só para o seu usuário, sem pedir administrador, e se atualiza sozinho. |
 | `Nimbo_x.y.z_x64-portable.zip` | Quem quer levar num pendrive. Descompacte e abra o `nimbo.exe`: tudo fica na pasta `data` ao lado dele. |
-| `Nimbo_x.y.z_chrome-extension.zip` | Só a extensão para Chrome, Edge, Brave e Vivaldi (o instalador e o portátil já trazem ela). |
+| `Nimbo_x.y.z_chrome-extension.zip` | A extensão para instalar sem a loja, em `chrome://extensions` com o Modo do desenvolvedor. A maioria deve usar a [Chrome Web Store](https://chromewebstore.google.com/detail/nimbo-download-manager/deofidkhliapkbelfhkamddcjlfpmljj). |
 
 O Windows pode avisar que o editor é desconhecido, porque o instalador não tem um certificado pago.
 Clique em **Mais informações → Executar assim mesmo**.
