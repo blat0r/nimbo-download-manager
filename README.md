@@ -6,7 +6,7 @@
 
 <p align="center">
   Gerenciador de downloads para Windows, feito em Rust.<br>
-  Várias conexões por arquivo, vídeo e música de mais de 1.800 sites, extensão para o navegador e visual liquid glass.
+  Várias conexões por arquivo, torrent, vídeo e música de mais de 1.800 sites, extensão para o navegador e visual liquid glass.
 </p>
 
 <p align="center">
@@ -31,7 +31,9 @@
   termina, ela rouba trabalho da mais lenta, então o download não fica preso esperando a última conexão.
 - **Não perde nada.** Pausa, queda de internet, PC desligado ou o Nimbo fechado à força: ele retoma de onde
   parou e confere com o servidor se o arquivo ainda é o mesmo.
-- **Leve.** Instalador de ~4 MB, cerca de 40 MB de memória. Nada de Electron.
+- **Sempre a postos.** Baixou algo no navegador com o Nimbo fechado? Ele abre sozinho em cerca de 3 segundos e
+  pergunta onde salvar, antes de baixar.
+- **Leve.** Instalador de ~6 MB, cerca de 40 MB de memória. Nada de Electron.
 - **Seu.** Sem conta, sem anúncio, sem telemetria. Nada sai do seu PC além dos próprios downloads.
 
 ## O que ele faz
@@ -46,6 +48,8 @@
 - Confere o hash (SHA-256, SHA-1, MD5) e pode passar o arquivo pelo Microsoft Defender ao terminar
 - Links em lote (`arquivo[01-20].zip`), colar vários links de uma vez, importar e exportar a lista
 - Agendador e ações ao terminar: desligar, suspender ou fechar o Nimbo
+- Aviso de download concluído com atalhos para abrir o arquivo ou a pasta; notificação do Windows opcional
+  (vem desligada, ligue em Configurações → Geral)
 
 ### Torrent
 
@@ -100,7 +104,9 @@ então funciona também em sites que pedem login.
 </p>
 
 - Pega os downloads do navegador e abre a janela de confirmação, ou baixa direto
-- Botão direito em um link, imagem ou vídeo → **Baixar com o Nimbo**
+- **Abre o Nimbo sozinho** quando ele está fechado: em cerca de 3 segundos aparece a janela para confirmar,
+  e o navegador não baixa nada antes
+- Botão direito em um link, imagem ou vídeo → **Baixar com o Nimbo** (links magnet também)
 - Encontra os vídeos e as transmissões da página
 - Pareamento na primeira vez: só a sua extensão fala com o Nimbo
 
@@ -109,6 +115,9 @@ então funciona também em sites que pedem login.
 **Chrome, Edge, Brave e Vivaldi:** instale pela [Chrome Web Store](https://chromewebstore.google.com/detail/nimbo-download-manager/deofidkhliapkbelfhkamddcjlfpmljj) — um clique, e ela se
 atualiza sozinha. No Nimbo, Configurações → Navegador → *Instalar no Chrome* abre essa página no navegador certo.
 No Edge, clique antes em *Permitir extensões de outras lojas*.
+
+Na primeira vez depois de instalar ou atualizar a extensão, o navegador pode pedir permissão para ela
+"se comunicar com aplicativos nativos": é o que deixa a extensão abrir o Nimbo. Ela só fala com o próprio Nimbo.
 
 ## Instalar
 
@@ -135,6 +144,7 @@ A versão portátil avisa e abre esta página para você baixar.
 
 - Sem conta, sem telemetria, sem anúncios
 - A conversa com a extensão fica no próprio PC (`127.0.0.1`), aceita só a extensão pareada e recusa páginas da web
+- Para abrir o Nimbo, o navegador só aceita as extensões oficiais do Nimbo, registradas pelo próprio app
 - [Política de privacidade completa](PRIVACY.md)
 - As ferramentas externas (yt-dlp, FFmpeg, Deno) vêm dos repositórios oficiais e têm o SHA-256 conferido antes de serem usadas
 
@@ -143,6 +153,12 @@ A versão portátil avisa e abre esta página para você baixar.
 **Ele é grátis?** Sim.
 
 **Funciona com sites que pedem login?** Pela extensão, sim: ela entrega os cookies do site junto com o link.
+
+**O Nimbo precisa ficar aberto?** Não. Com a extensão, ele abre sozinho quando você baixa algo. Se preferir,
+ele também pode iniciar com o Windows, escondido na bandeja (Configurações → Geral).
+
+**O download foi para o navegador em vez do Nimbo.** Confira se a extensão está ligada (ícone do Nimbo →
+*Capturar downloads*) e se o tipo do arquivo está na lista de Configurações → Navegador → *Tipos capturados*.
 
 **Onde ficam as configurações?** No instalado, em `%APPDATA%\app.nimbo.downloads`. No portátil, na pasta `data`.
 

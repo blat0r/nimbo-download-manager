@@ -1,7 +1,7 @@
 # Política de privacidade do Nimbo
 
 Vale para o aplicativo Nimbo e para a extensão "Nimbo Download Manager" (Firefox, Chrome, Edge, Brave e outros
-navegadores Chromium). Última atualização: 22 de novembro de 2026.
+navegadores Chromium). Última atualização: 26 de novembro de 2026.
 
 ## Resumo
 
@@ -29,7 +29,10 @@ A extensão também guarda no próprio navegador se a captura está ligada e o e
 - **contextMenus**: o item "Baixar com o Nimbo" no botão direito.
 - **scripting** e **activeTab**: ler os links da página aberta quando você pede "Baixar todos os links".
 - **tabs**: saber a página e o título do vídeo que você quer baixar.
-- **storage**: guardar as preferências da extensão.
+- **storage**: guardar as preferências da extensão e as regras de captura do Nimbo, para decidir rápido mesmo
+  com o app fechado.
+- **nativeMessaging**: pedir ao navegador para abrir o aplicativo Nimbo quando ele estiver fechado e você baixar
+  algo. A extensão só fala com o programa registrado pelo próprio Nimbo (`app.nimbo.host`), que apenas abre o app.
 
 ## O aplicativo
 
